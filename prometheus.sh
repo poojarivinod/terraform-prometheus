@@ -12,7 +12,7 @@ tar -xf alertmanager-$ALERT_MANGER_VERSION.linux-amd64.tar.gz
 mv alertmanager-$ALERT_MANGER_VERSION.linux-amd64 alertmanager
 
 cd /tmp
-git clone https://github.com/DAWS-82S/terraform-prometheus.git
+git clone https://github.com/poojarivinod/terraform-prometheus.git
 cd terraform-prometheus
 cp prometheus.service /etc/systemd/system/prometheus.service
 cp alertmanager.service  /etc/systemd/system/alertmanager.service
