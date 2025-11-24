@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PROM_VERSION=3.4.0
-ALERT_MANGER_VERSION=0.28.1
+PROM_VERSION=3.8.0
+ALERT_MANGER_VERSION=0.29.0 
 cd /opt
 wget https://github.com/prometheus/prometheus/releases/download/v$PROM_VERSION/prometheus-$PROM_VERSION.linux-amd64.tar.gz
 tar -xf  prometheus-$PROM_VERSION.linux-amd64.tar.gz

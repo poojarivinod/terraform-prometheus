@@ -2,15 +2,15 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "5.84.0"
+      version = "6.19.0"
     }
   }
 
   backend "s3" {
-    bucket = "82s-tf-remote-state-dev"
+    bucket = "terraform-tf-remote-state"
     key    = "prometheus-dev" # you should have unique keys with in the bucket, same key should not be used in other repos or tf projects
     region = "us-east-1"
-    dynamodb_table = "82s-tf-remote-state-dev"
+    dynamodb_table = "vinod-tf-remote-state-dev"
   }
 }
 

@@ -1,3 +1,4 @@
+# It is for to show in the grafana as datasource
 apiVersion: 1
 datasources:
   - name: Prometheus
